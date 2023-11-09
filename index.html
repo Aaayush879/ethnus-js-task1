@@ -1,0 +1,28 @@
+<html>
+    <head><title>task</title></head>
+    <script>
+    function reverseNumber(num) {
+    let numStr = num.toString();
+    let reversedStr = numStr.split('').reverse().join('');
+  
+    // Convert the reversed string back to a number
+    let reversedNum = parseFloat(reversedStr);
+  
+    // Handle negative numbers by multiplying the result by -1 if the input number was negative
+    if (num < 0) {
+      reversedNum *= -1;
+    }
+  
+    return reversedNum;
+    }
+  
+  // Example usage:
+  const originalNumber = 12345;
+  const reversed = reverseNumber(originalNumber);
+  console.log("Original Number: " + originalNumber);
+  console.log("Reversed Number: " + reversed);
+    </script>
+    <body>
+
+    </body>
+</html>  
